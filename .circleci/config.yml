@@ -1,9 +1,10 @@
 version: 2
 jobs:
    build:
-     working_directory: ~/web
+     working_directory: ~/
      docker:
        - image: php:5.4
      steps:
        - checkout
+       - run composer-install --no-interaction
        - run: echo "hello world"
