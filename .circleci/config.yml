@@ -1,8 +1,9 @@
 version: 2
 jobs:
    build:
+     working_directory: /
      docker:
-       - image: php:5.4
+       - image: circleci/php
      steps:
        - run: composer-install --no-interaction
        - run: echo "hello world"
