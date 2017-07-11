@@ -1,9 +1,0 @@
-version: 2
-jobs:
-   build:
-     working_directory: ~/
-     docker:
-       - image: circleci/php:7.1
-     steps:
-       - checkout
-       - run: composer install --no-interaction

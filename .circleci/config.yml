@@ -1,0 +1,9 @@
+version: 2
+jobs:
+   build:
+     working_directory: ~/web
+     docker:
+       - image: php:5.4
+     steps:
+       - checkout
+       - run: echo "hello world"
