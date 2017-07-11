@@ -3,8 +3,8 @@ jobs:
    build:
      working_directory: ~/web
      docker:
-       - image: circleci/php:7.1.5
+       - image: notnoopci/php:7.1.5-browsers
      steps:
        - checkout
-       - run: sudo curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+       - run: composer install
        - run: echo "hello world"
