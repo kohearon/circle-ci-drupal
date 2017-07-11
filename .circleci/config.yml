@@ -3,8 +3,9 @@ jobs:
    build:
      working_directory: ~/web
      docker:
-       - image: circleci/php
+       - image: circleci/php:7.1.5
      steps:
        - checkout
+       - run: composer self-update
        - run: composer install --no-interaction
        - run: echo "hello world"
