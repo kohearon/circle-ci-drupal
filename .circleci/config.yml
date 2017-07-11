@@ -6,5 +6,5 @@ jobs:
        - image: circleci/php:7.1.5
      steps:
        - checkout
-       - run: curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+       - command: composer install
        - run: echo "hello world"
