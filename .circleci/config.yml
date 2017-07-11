@@ -4,6 +4,5 @@ jobs:
      docker:
        - image: php:5.4
      steps:
-       - checkout
        - run: composer-install --no-interaction
        - run: echo "hello world"
