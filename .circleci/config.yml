@@ -6,6 +6,4 @@ jobs:
        - image: circleci/php:7.1.5
      steps:
        - checkout
-       - run: composer self-update
-       - run: composer install --no-interaction
        - run: echo "hello world"
