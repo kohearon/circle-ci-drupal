@@ -3,8 +3,9 @@ jobs:
    build:
      working_directory: ~/web
      docker:
+       # This Image Has Composer Magically #
        - image: notnoopci/php:7.1.5-browsers
      steps:
        - checkout
        - run: composer install
-       - run: echo "hello world"
+       - run: composer global require drush/drush:dev-master
