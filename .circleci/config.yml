@@ -13,7 +13,7 @@ jobs:
            MYSQL_DATABASE: icp
            MYSQL_USER: drupal
            MYSQL_PASSWORD: drupal
-         command: mysql --host=localhost --user=root --password=admin 'create database drupal'
+         command: mysql --host=127.0.0.1 --user=root --password=admin 'create database drupal'
 
      steps:
        - checkout
