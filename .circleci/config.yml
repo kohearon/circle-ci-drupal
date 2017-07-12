@@ -6,7 +6,7 @@ jobs:
 
        ## PHP Container With Composer, Drush, And Required PHP
        ## Extensions To Allow Drush To Do A Site Install
-       - image: ohearonkg/circle_ci_php
+       - image: ohearonkg/circle_ci_php:0.1
 
        ## DEFAULTS FOR THIS IMAGE ##
        - image: mysql
