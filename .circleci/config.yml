@@ -7,16 +7,16 @@ jobs:
        - image: notnoopci/php:7.1.5-browsers
 
        ## DEFAULTS FOR THIS IMAGE ##
-      # MYSQL_ALLOW_EMPTY_PASSWORD=true \
-      # MYSQL_DATABASE=circle_test \
-      # MYSQL_HOST=127.0.0.1 \
-      # MYSQL_ROOT_HOST=% \
-      # MYSQL_USER=root
-       - image: circleci/mysql:5
-         command: mysql --host=localhost --user=root 'create database circle_test'
+       - image: mysql
+         environment:
+           MYSQL_ROOT_PASSWORD: admin
+           MYSQL_DATABASE: icp
+           MYSQL_USER: drupal
+           MYSQL_PASSWORD: drupal
+         command: mysql --host=mysql --user=drupal --password=drupal 'create database drupal'
 
      steps:
        - checkout
        - run: composer install
        - run: composer global require drush/drush:dev-master
-       - run: cd web/ && ../vendor/bin/drush site-install --db-url=mysql://root:@localhost/circle_test
+       - run: cd web/ && ../vendor/bin/drush site-install --db-url=mysql://root:@localhost/drupal
