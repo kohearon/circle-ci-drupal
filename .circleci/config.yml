@@ -9,7 +9,7 @@ jobs:
        ## DEFAULTS FOR THIS IMAGE ##
        - image: mysql
          environment:
-           MYSQL_ROOT_PASSWORD: admin
+           MYSQL_ROOT_PASSWORD: ''
            MYSQL_ALLOW_EMPTY_PASSWORD: yes
            MYSQL_DATABASE: drupal
 
