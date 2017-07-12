@@ -1,0 +1,26 @@
+uuid: 391fb3cf-9f2f-41c0-842a-adcf38e34ca0
+langcode: en
+status: true
+dependencies:
+  module:
+    - icp
+    - system
+  theme:
+    - facial
+id: icpuserlogin
+theme: facial
+region: sidebar_first
+weight: 0
+provider: null
+plugin: icp_user_login_block
+settings:
+  id: icp_user_login_block
+  label: 'Client Login'
+  provider: icp
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /welcome
+    negate: false
+    context_mapping: {  }

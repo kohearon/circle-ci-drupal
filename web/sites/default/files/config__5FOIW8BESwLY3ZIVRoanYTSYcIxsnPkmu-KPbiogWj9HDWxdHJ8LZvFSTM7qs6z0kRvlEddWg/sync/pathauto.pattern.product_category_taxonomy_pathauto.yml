@@ -1,0 +1,23 @@
+uuid: 2929c2d5-5576-4674-9f91-88c30e6933b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: product_category_taxonomy_pathauto
+label: 'Product category taxonomy pathauto'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'catalog/[term:name]'
+selection_criteria:
+  d1010841-b5fa-4a09-8f4e-cae719b497c4:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      category: category
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: d1010841-b5fa-4a09-8f4e-cae719b497c4
+selection_logic: and
+weight: -5
+relationships: {  }

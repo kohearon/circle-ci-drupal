@@ -1,0 +1,27 @@
+uuid: cb755b47-0e4e-4206-a462-a37c5cf31bcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.customer.address
+    - profile.type.customer
+  enforced:
+    module:
+      - commerce_order
+  module:
+    - address
+_core:
+  default_config_hash: hLsGttE_aayocJAy545caXaV1xyLgsw4Q-22aeDN-Tc
+id: profile.customer.default
+targetEntityType: profile
+bundle: customer
+mode: default
+content:
+  address:
+    type: address_default
+    weight: 0
+    settings:
+      default_country: CA
+    third_party_settings: {  }
+    region: content
+hidden: {  }

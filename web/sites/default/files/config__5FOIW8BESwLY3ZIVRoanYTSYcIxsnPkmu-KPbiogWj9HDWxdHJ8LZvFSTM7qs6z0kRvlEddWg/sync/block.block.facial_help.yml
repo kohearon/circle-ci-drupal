@@ -1,0 +1,22 @@
+uuid: 5d7fe7dc-65f1-4c2a-90b5-79c99aa2e1b5
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - facial
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: facial_help
+theme: facial
+region: content
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

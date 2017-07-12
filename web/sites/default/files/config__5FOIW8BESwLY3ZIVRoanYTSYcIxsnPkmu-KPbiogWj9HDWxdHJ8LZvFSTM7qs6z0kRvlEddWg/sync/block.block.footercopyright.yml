@@ -1,0 +1,25 @@
+uuid: eb4e0053-fd30-4593-8773-e17edd38363e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6e2b1b84-738a-4aa2-90f8-0a259094ee84'
+  module:
+    - block_content
+  theme:
+    - facial
+id: footercopyright
+theme: facial
+region: footer_left
+weight: 0
+provider: null
+plugin: 'block_content:6e2b1b84-738a-4aa2-90f8-0a259094ee84'
+settings:
+  id: 'block_content:6e2b1b84-738a-4aa2-90f8-0a259094ee84'
+  label: 'Footer Copyright'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

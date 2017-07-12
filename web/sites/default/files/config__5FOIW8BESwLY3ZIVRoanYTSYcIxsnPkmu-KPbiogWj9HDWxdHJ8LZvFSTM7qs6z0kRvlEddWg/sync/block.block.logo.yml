@@ -1,0 +1,25 @@
+uuid: c977a91c-2750-4738-b582-1a82e82e86f4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:33affdf8-189e-4ea2-94c6-f83303dd0853'
+  module:
+    - block_content
+  theme:
+    - facial
+id: logo
+theme: facial
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:33affdf8-189e-4ea2-94c6-f83303dd0853'
+settings:
+  id: 'block_content:33affdf8-189e-4ea2-94c6-f83303dd0853'
+  label: Logo
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,15 @@
+uuid: 0a395397-7440-41d8-9e97-38b0654b37e3
+name: ICP
+mail: development@modernmedia.ca
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/2
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
+mail_notification: ''

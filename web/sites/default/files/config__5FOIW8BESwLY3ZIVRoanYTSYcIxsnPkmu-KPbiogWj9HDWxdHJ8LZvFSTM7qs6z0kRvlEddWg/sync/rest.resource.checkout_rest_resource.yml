@@ -1,0 +1,18 @@
+uuid: e310c57b-01af-487f-8761-ba306c36ad9e
+langcode: en
+status: true
+dependencies:
+  module:
+    - icp
+    - serialization
+    - user
+id: checkout_rest_resource
+plugin_id: checkout_rest_resource
+granularity: resource
+configuration:
+  methods:
+    - PATCH
+  formats:
+    - json
+  authentication:
+    - cookie

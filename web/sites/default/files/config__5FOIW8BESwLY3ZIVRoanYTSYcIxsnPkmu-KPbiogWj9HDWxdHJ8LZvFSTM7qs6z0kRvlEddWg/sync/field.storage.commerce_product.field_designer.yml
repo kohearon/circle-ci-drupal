@@ -1,0 +1,20 @@
+uuid: 0c9c4eb7-2d5e-4c4c-a5b0-bef1f9ddf533
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - taxonomy
+id: commerce_product.field_designer
+field_name: field_designer
+entity_type: commerce_product
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

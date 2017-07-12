@@ -1,0 +1,20 @@
+uuid: 9344e3de-73db-4d6c-9ad3-73a56ecbaf99
+langcode: en
+status: true
+dependencies:
+  module:
+    - profile
+    - serialization
+    - user
+id: entity.profile
+plugin_id: 'entity:profile'
+granularity: resource
+configuration:
+  methods:
+    - GET
+    - POST
+    - PATCH
+  formats:
+    - json
+  authentication:
+    - cookie

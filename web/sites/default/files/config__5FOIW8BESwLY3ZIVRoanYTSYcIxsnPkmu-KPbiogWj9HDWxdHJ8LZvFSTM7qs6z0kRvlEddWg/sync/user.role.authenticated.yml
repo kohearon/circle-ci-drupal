@@ -1,0 +1,43 @@
+uuid: cb1e9363-07eb-4608-92b8-4eb4945e1f73
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access cart'
+  - 'access comments'
+  - 'access commerce_wishlist overview'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access wishlist'
+  - 'create default commerce_order'
+  - 'create default commerce_wishlist'
+  - 'delete default commerce_order'
+  - 'delete default commerce_wishlist'
+  - 'post comments'
+  - 'restful delete cart_rest_resource'
+  - 'restful delete wishlist_rest_resource'
+  - 'restful get current_cart_rest_resource'
+  - 'restful get current_user_rest_resource'
+  - 'restful get current_wishlist_rest_resource'
+  - 'restful get webform_rest_elements'
+  - 'restful patch cart_order_note_resource'
+  - 'restful patch cart_rest_resource'
+  - 'restful patch checkout_rest_resource'
+  - 'restful patch wishlist_rest_resource'
+  - 'restful post webform_rest_submit'
+  - 'search content'
+  - 'skip comment approval'
+  - 'update default commerce_order'
+  - 'update default commerce_wishlist'
+  - 'use text format basic_html'
+  - 'view any commerce_product'
+  - 'view commerce_product_attribute'
+  - 'view own commerce_order'
+  - 'view own commerce_wishlist'

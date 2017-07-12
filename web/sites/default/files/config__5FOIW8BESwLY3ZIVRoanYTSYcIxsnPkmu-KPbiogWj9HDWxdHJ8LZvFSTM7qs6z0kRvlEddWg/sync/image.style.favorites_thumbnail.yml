@@ -1,0 +1,15 @@
+uuid: 60f04710-e1c2-4a3a-aeb7-d91d466511d8
+langcode: en
+status: true
+dependencies: {  }
+name: favorites_thumbnail
+label: 'Favorites Thumbnail'
+effects:
+  e22f712d-2216-423d-835a-e893610ac003:
+    uuid: e22f712d-2216-423d-835a-e893610ac003
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 170
+      upscale: false

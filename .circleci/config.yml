@@ -9,11 +9,11 @@ jobs:
        ## DEFAULTS FOR THIS IMAGE ##
       # MYSQL_ALLOW_EMPTY_PASSWORD=true \
       # MYSQL_DATABASE=circle_test \
-      #M YSQL_HOST=127.0.0.1 \
+      # MYSQL_HOST=127.0.0.1 \
       # MYSQL_ROOT_HOST=% \
       # MYSQL_USER=root
        - image: circleci/mysql:5
-       
+
      steps:
        - checkout
        - run: composer install

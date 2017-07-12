@@ -1,0 +1,20 @@
+uuid: b4b1fe8d-9c9a-4f23-9312-cce5161c68db
+langcode: en
+status: true
+dependencies:
+  theme:
+    - facial
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: facial_page_title
+theme: facial
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

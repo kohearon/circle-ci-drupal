@@ -1,0 +1,22 @@
+uuid: fc497b07-ada0-431f-859d-30d1c3146dd2
+langcode: en
+status: false
+dependencies:
+  theme:
+    - facial
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: facial_local_tasks
+theme: facial
+region: content
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,19 @@
+uuid: 498186f6-a9ec-457a-8790-596d894e257d
+langcode: en
+status: true
+dependencies:
+  module:
+    - icp
+    - serialization
+    - user
+id: wishlist_rest_resource
+plugin_id: wishlist_rest_resource
+granularity: resource
+configuration:
+  methods:
+    - DELETE
+    - PATCH
+  formats:
+    - json
+  authentication:
+    - cookie
