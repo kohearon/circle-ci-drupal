@@ -10,9 +10,6 @@ jobs:
        - image: mysql
          environment:
            MYSQL_ROOT_PASSWORD: admin
-           MYSQL_DATABASE: icp
-           MYSQL_USER: drupal
-           MYSQL_PASSWORD: drupal
          command: mysql --host=127.0.0.1 --user=root --password=admin 'create database drupal'
 
      steps:
