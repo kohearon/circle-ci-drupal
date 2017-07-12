@@ -10,7 +10,8 @@ jobs:
        - image: mysql
          environment:
            MYSQL_ROOT_PASSWORD: admin
-         command: mysql --user=root --password=admin 'create database drupal'
+           MYSQL_ALLOW_EMPTY_PASSWORD: yes
+           MYSQL_DATABASE: drupal
 
      steps:
        - checkout
