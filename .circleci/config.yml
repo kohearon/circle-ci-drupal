@@ -15,9 +15,10 @@ jobs:
 
      steps:
        - checkout
+       - run: sudo apt-get install libpng-dev
+       - run: sudo apt-get install mysql-client
        - run: sudo docker-php-ext-install pdo_mysql
        - run: sudo docker-php-ext-install gd
-       - run: sudo apt-get install mysql-client
        - run: composer install
        - run: composer global require drush/drush:dev-master
        - run: cd web/ && ../vendor/bin/drush site-install --db-url=mysql://root:@127.0.0.1/drupal --yes
