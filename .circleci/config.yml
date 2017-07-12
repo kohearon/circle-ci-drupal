@@ -22,3 +22,4 @@ jobs:
        - run: composer install
        - run: composer global require drush/drush:dev-master
        - run: cd web/ && ../vendor/bin/drush site-install --db-url=mysql://root:@127.0.0.1/drupal --yes
+       - run: cd web/ && ./vendor/bin/drush config-import 
