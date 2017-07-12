@@ -15,7 +15,8 @@ jobs:
 
      steps:
        - checkout
-       - run: sudo docker-php-ext-install pdo_mysql gd
+       - run: sudo docker-php-ext-install pdo_mysql
+       - run: sudo docker-php-ext-install gd
        - run: sudo apt-get install mysql-client
        - run: composer install
        - run: composer global require drush/drush:dev-master
